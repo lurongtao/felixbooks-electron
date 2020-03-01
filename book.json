@@ -23,7 +23,8 @@
     "donate",
     "sharing-plus",
     "anchor-navigation-ex",
-    "favicon"
+    "favicon",
+    "insert-logo"
   ],
   "pluginsConfig": {
     "github": {
@@ -81,7 +82,7 @@
     },
     "insert-logo": {
       "url": "images/logo.png",
-      "style": "background: #000; max-height: 30px; min-height: 30px"
+      "style": "background: skyblue; width: 100%; height: 100%;"
     }
   }
 }
