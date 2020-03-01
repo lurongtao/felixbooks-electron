@@ -1,12 +1,12 @@
 # 搭建 Electron 运行环境
 
-### 安装 Electron
+### 1、安装 Electron
 
 ```
 npm install electron -S
 ```
 
-### 尝试官网的一个案例
+### 2、尝试官网的一个案例
 
 ```shell
 # 克隆这仓库
