@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>项目实战 · 千锋大前端小册-Electron</title>
+        <title>01-环境搭建 · 千锋大前端小册-Electron</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="01-环境搭建.html" />
+    <link rel="next" href="02-构建项目基本结构.html" />
     
     
-    <link rel="prev" href="../basics/05-IPC通信.html" />
+    <link rel="prev" href="./" />
     
 
     
@@ -195,7 +195,20 @@
             
         </li>
     
-        <li class="chapter " data-level="1.2.4" data-path="../basics/05-IPC通信.html">
+        <li class="chapter " data-level="1.2.4" data-path="../basics/04-Renderer Process API.html">
+            
+                <a href="../basics/04-Renderer Process API.html">
+            
+                    
+                    04-Renderer Process API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="../basics/05-IPC通信.html">
             
                 <a href="../basics/05-IPC通信.html">
             
@@ -208,14 +221,40 @@
             
         </li>
     
+        <li class="chapter " data-level="1.2.6" data-path="../basics/06-Shared API.html">
+            
+                <a href="../basics/06-Shared API.html">
+            
+                    
+                    06-Shared API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.7" data-path="../basics/07-特性和技巧.html">
+            
+                <a href="../basics/07-特性和技巧.html">
+            
+                    
+                    07-特性和技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
         </li>
     
-        <li class="chapter active" data-level="1.3" data-path="01-环境搭建.html">
+        <li class="chapter " data-level="1.3" data-path="./">
             
-                <a href="01-环境搭建.html">
+                <a href="./">
             
                     
                     项目实战
@@ -266,14 +305,105 @@
             
         </li>
     
+        <li class="chapter " data-level="1.3.4" data-path="04-获得屏幕快照.html">
+            
+                <a href="04-获得屏幕快照.html">
+            
+                    
+                    04-获得屏幕快照
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="05-显示列表.html">
+            
+                <a href="05-显示列表.html">
+            
+                    
+                    05-显示列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="06-打开网站窗口.html">
+            
+                <a href="06-打开网站窗口.html">
+            
+                    
+                    06-打开网站窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="07-删除信息.html">
+            
+                <a href="07-删除信息.html">
+            
+                    
+                    07-删除信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="08-搜索信息.html">
+            
+                <a href="08-搜索信息.html">
+            
+                    
+                    08-搜索信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="09-定制菜单.html">
+            
+                <a href="09-定制菜单.html">
+            
+                    
+                    09-定制菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="10-项目打包部署.html">
+            
+                <a href="10-项目打包部署.html">
+            
+                    
+                    10-项目打包部署
+            
+                </a>
+            
+
+            
+        </li>
+    
 
             </ul>
             
         </li>
     
-        <li class="chapter " data-level="1.4" data-path="../thanks/README.md">
+        <li class="chapter " data-level="1.4" data-path="../thanks/">
             
-                <span>
+                <a href="../thanks/">
             
                     
                     感谢
@@ -314,7 +444,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >项目实战</a>
+        <a href=".." >01-环境搭建</a>
     </h1>
 </div>
 
@@ -329,13 +459,14 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><b></b>1&#x3001;&#x642D;&#x5EFA; Electron &#x73AF;&#x5883;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><b></b>2&#x3001;&#x521B;&#x5EFA; main.js &#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><b></b>3&#x3001;&#x642D;&#x5EFA; Vue &#x73AF;&#x5883;, &#x542F;&#x52A8; Vue &#x670D;&#x52A1;</a></li><li><span class="title-icon "></span><a href="#4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><b></b>4&#x3001;&#x914D;&#x7F6E; package.json npm &#x811A;&#x672C;</a></li><li><span class="title-icon "></span><a href="#5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><b></b>5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;</a></li></ul></div><a href="#1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><a name="1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;" class="plugin-anchor" href="#1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x642D;&#x5EFA; Electron &#x73AF;&#x5883;</h1>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x73AF;&#x5883;&#x642D;&#x5EFA;"><b></b>&#x73AF;&#x5883;&#x642D;&#x5EFA;</a></li><ul><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><b></b>1&#x3001;&#x642D;&#x5EFA; Electron &#x73AF;&#x5883;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><b></b>2&#x3001;&#x521B;&#x5EFA; main.js &#x6587;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><b></b>3&#x3001;&#x642D;&#x5EFA; Vue &#x73AF;&#x5883;, &#x542F;&#x52A8; Vue &#x670D;&#x52A1;</a></li><li><span class="title-icon "></span><a href="#4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><b></b>4&#x3001;&#x914D;&#x7F6E; package.json npm &#x811A;&#x672C;</a></li><li><span class="title-icon "></span><a href="#5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><b></b>5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;</a></li></ul></ul></ul></div><a href="#&#x73AF;&#x5883;&#x642D;&#x5EFA;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x73AF;&#x5883;&#x642D;&#x5EFA;"><a name="&#x73AF;&#x5883;&#x642D;&#x5EFA;" class="anchor-navigation-ex-anchor" href="#&#x73AF;&#x5883;&#x642D;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x73AF;&#x5883;&#x642D;&#x5EFA;" class="plugin-anchor" href="#&#x73AF;&#x5883;&#x642D;&#x5EFA;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x73AF;&#x5883;&#x642D;&#x5EFA;</h1>
+<h3 id="1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><a name="1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;" class="plugin-anchor" href="#1&#x3001;&#x642D;&#x5EFA;-electron-&#x73AF;&#x5883;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x642D;&#x5EFA; Electron &#x73AF;&#x5883;</h3>
 <p>&#x5728;&#x4F60;&#x8BA4;&#x4E3A;&#x5408;&#x9002;&#x7684;&#x76EE;&#x5F55;&#x4E0B; &#x521B;&#x5EFA; readit-vue &#x76EE;&#x5F55;&#xFF0C;&#x5728;&#x7EC8;&#x7AEF;&#x547D;&#x4EE4;&#x884C;&#x91CC;&#x8F93;&#x5165;&#x547D;&#x4EE4;&#xFF1A;</p>
 <pre><code class="lang-s">cd &#x4F60;&#x8BA4;&#x4E3A;&#x5408;&#x9002;&#x7684;&#x76EE;&#x5F55;/readit-vue
 npm init -y
 npm install electron@latest -D
 </code></pre>
-<h1 id="2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><a name="2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;" class="plugin-anchor" href="#2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x521B;&#x5EFA; main.js &#x6587;&#x4EF6;</h1>
+<h3 id="2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><a name="2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;" class="plugin-anchor" href="#2&#x3001;&#x521B;&#x5EFA;-mainjs-&#x6587;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x521B;&#x5EFA; main.js &#x6587;&#x4EF6;</h3>
 <p>&#x5728;&#x9879;&#x76EE;&#x6839;&#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; main.js &#x6587;&#x4EF6;&#xFF1A;</p>
 <pre><code class="lang-js"><span class="hljs-comment">// /main.js</span>
 
@@ -396,13 +527,13 @@ app.on(<span class="hljs-string">&apos;activate&apos;</span>, () =&gt; {
   <span class="hljs-keyword">if</span> (mainWindow === <span class="hljs-literal">null</span>) createWindow()
 })
 </code></pre>
-<h1 id="3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><a name="3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;" class="plugin-anchor" href="#3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x642D;&#x5EFA; Vue &#x73AF;&#x5883;, &#x542F;&#x52A8; Vue &#x670D;&#x52A1;</h1>
+<h3 id="3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><a name="3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;" class="plugin-anchor" href="#3&#x3001;&#x642D;&#x5EFA;-vue-&#x73AF;&#x5883;-&#x542F;&#x52A8;-vue-&#x670D;&#x52A1;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x642D;&#x5EFA; Vue &#x73AF;&#x5883;, &#x542F;&#x52A8; Vue &#x670D;&#x52A1;</h3>
 <p>&#x5728;&#x547D;&#x4EE4;&#x884C;&#x91CC;&#x8F93;&#x5165;&#xFF1A;</p>
 <pre><code class="lang-s">vue create vue-renderer
 cd vue-renderer
 yarn serve
 </code></pre>
-<h1 id="4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><a name="4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;" class="plugin-anchor" href="#4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x914D;&#x7F6E; package.json npm &#x811A;&#x672C;</h1>
+<h3 id="4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><a name="4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;" class="plugin-anchor" href="#4&#x3001;&#x914D;&#x7F6E;-packagejson-npm-&#x811A;&#x672C;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x914D;&#x7F6E; package.json npm &#x811A;&#x672C;</h3>
 <pre><code class="lang-json"><span class="hljs-comment">// /package.json</span>
 {
   <span class="hljs-comment">// ...</span>
@@ -411,7 +542,7 @@ yarn serve
   }
 }
 </code></pre>
-<h1 id="5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><a name="5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;" class="plugin-anchor" href="#5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;</h1>
+<h3 id="5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><a name="5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;" class="anchor-navigation-ex-anchor" href="#5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;" class="plugin-anchor" href="#5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;&#x542F;&#x52A8;&#x5E94;&#x7528;</h3>
 <pre><code>npm start
 </code></pre>
                                 
@@ -440,12 +571,12 @@ yarn serve
 
             
                 
-                <a href="../basics/05-IPC通信.html" class="navigation navigation-prev " aria-label="Previous page: 05-IPC通信">
+                <a href="./" class="navigation navigation-prev " aria-label="Previous page: 项目实战">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="01-环境搭建.html" class="navigation navigation-next " aria-label="Next page: 01-环境搭建">
+                <a href="02-构建项目基本结构.html" class="navigation navigation-next " aria-label="Next page: 02-构建项目基本结构">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -456,7 +587,7 @@ yarn serve
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"项目实战","level":"1.3","depth":1,"next":{"title":"01-环境搭建","level":"1.3.1","depth":2,"path":"project/01-环境搭建.md","ref":"./project/01-环境搭建.md","articles":[]},"previous":{"title":"05-IPC通信","level":"1.2.4","depth":2,"path":"basics/05-IPC通信.md","ref":"./basics/05-IPC通信.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/lurongtao/felixbooks-electron"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"lurongtao","repo":"felixbooks-electron","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{}},"theme":"default","author":"古艺散人","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"千锋大前端小册-Electron","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"Electron 入门与实战"},"file":{"path":"project/01-环境搭建.md","mtime":"2020-02-26T15:57:42.438Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-02-27T06:02:56.406Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"01-环境搭建","level":"1.3.1","depth":2,"next":{"title":"02-构建项目基本结构","level":"1.3.2","depth":2,"path":"project/02-构建项目基本结构.md","ref":"./project/02-构建项目基本结构.md","articles":[]},"previous":{"title":"项目实战","level":"1.3","depth":1,"path":"project/README.md","ref":"./project/README.md","articles":[{"title":"01-环境搭建","level":"1.3.1","depth":2,"path":"project/01-环境搭建.md","ref":"./project/01-环境搭建.md","articles":[]},{"title":"02-构建项目基本结构","level":"1.3.2","depth":2,"path":"project/02-构建项目基本结构.md","ref":"./project/02-构建项目基本结构.md","articles":[]},{"title":"03-添加信息","level":"1.3.3","depth":2,"path":"project/03-添加信息.md","ref":"./project/03-添加信息.md","articles":[]},{"title":"04-获得屏幕快照","level":"1.3.4","depth":2,"path":"project/04-获得屏幕快照.md","ref":"./project/04-获得屏幕快照.md","articles":[]},{"title":"05-显示列表","level":"1.3.5","depth":2,"path":"project/05-显示列表.md","ref":"./project/05-显示列表.md","articles":[]},{"title":"06-打开网站窗口","level":"1.3.6","depth":2,"path":"project/06-打开网站窗口.md","ref":"./project/06-打开网站窗口.md","articles":[]},{"title":"07-删除信息","level":"1.3.7","depth":2,"path":"project/07-删除信息.md","ref":"./project/07-删除信息.md","articles":[]},{"title":"08-搜索信息","level":"1.3.8","depth":2,"path":"project/08-搜索信息.md","ref":"./project/08-搜索信息.md","articles":[]},{"title":"09-定制菜单","level":"1.3.9","depth":2,"path":"project/09-定制菜单.md","ref":"./project/09-定制菜单.md","articles":[]},{"title":"10-项目打包部署","level":"1.3.10","depth":2,"path":"project/10-项目打包部署.md","ref":"./project/10-项目打包部署.md","articles":[]}]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/lurongtao/felixbooks-electron"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"lurongtao","repo":"felixbooks-electron","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"url":"images/logo.png","style":"background: #000; max-height: 30px; min-height: 30px"}},"theme":"default","author":"古艺散人","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"千锋大前端小册-Electron","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"Electron 入门与实战"},"file":{"path":"project/01-环境搭建.md","mtime":"2020-03-01T02:15:41.390Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-01T08:14:03.448Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>

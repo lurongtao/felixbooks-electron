@@ -1,0 +1,812 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-hans" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>07-特性和技巧 · 千锋大前端小册-Electron</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        <meta name="author" content="古艺散人">
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchors/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-donate/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-anchor-navigation-ex/style/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+
+        
+    
+    
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../project/" />
+    
+    
+    <link rel="prev" href="06-Shared API.html" />
+    
+
+    
+        <link rel="shortcut icon" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="bookmark" href='../source/images/favicon.jpg' type="image/x-icon">
+    
+    
+        <link rel="apple-touch-icon" href='../source/images/apple-touch-icon.jpg'>
+    
+    
+        
+        <link rel="apple-touch-icon" sizes="120x120" href="../source/images/apple-touch-icon.jpg">
+        
+        <link rel="apple-touch-icon" sizes="180x180" href="../source/images/apple-touch-icon.jpg">
+        
+    
+
+    <style>
+    @media only screen and (max-width: 640px) {
+        .book-header .hidden-mobile {
+            display: none;
+        }
+    }
+    </style>
+    <script>
+        window["gitbook-plugin-github-buttons"] = {"buttons":[{"user":"lurongtao","repo":"felixbooks-electron","type":"star","size":"small","count":true}]};
+    </script>
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="输入并搜索" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="01-Electron介绍.html">
+            
+                <a href="01-Electron介绍.html">
+            
+                    
+                    基础
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="01-Electron介绍.html">
+            
+                <a href="01-Electron介绍.html">
+            
+                    
+                    01-Electron介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2" data-path="02-搭建Electron运行环境.html">
+            
+                <a href="02-搭建Electron运行环境.html">
+            
+                    
+                    02-搭建Electron运行环境
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="03-Main Process API.html">
+            
+                <a href="03-Main Process API.html">
+            
+                    
+                    03-Main Process API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.4" data-path="04-Renderer Process API.html">
+            
+                <a href="04-Renderer Process API.html">
+            
+                    
+                    04-Renderer Process API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.5" data-path="05-IPC通信.html">
+            
+                <a href="05-IPC通信.html">
+            
+                    
+                    05-IPC通信
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.6" data-path="06-Shared API.html">
+            
+                <a href="06-Shared API.html">
+            
+                    
+                    06-Shared API
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.7" data-path="07-特性和技巧.html">
+            
+                <a href="07-特性和技巧.html">
+            
+                    
+                    07-特性和技巧
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="../project/">
+            
+                <a href="../project/">
+            
+                    
+                    项目实战
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.3.1" data-path="../project/01-环境搭建.html">
+            
+                <a href="../project/01-环境搭建.html">
+            
+                    
+                    01-环境搭建
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.2" data-path="../project/02-构建项目基本结构.html">
+            
+                <a href="../project/02-构建项目基本结构.html">
+            
+                    
+                    02-构建项目基本结构
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.3" data-path="../project/03-添加信息.html">
+            
+                <a href="../project/03-添加信息.html">
+            
+                    
+                    03-添加信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.4" data-path="../project/04-获得屏幕快照.html">
+            
+                <a href="../project/04-获得屏幕快照.html">
+            
+                    
+                    04-获得屏幕快照
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.5" data-path="../project/05-显示列表.html">
+            
+                <a href="../project/05-显示列表.html">
+            
+                    
+                    05-显示列表
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.6" data-path="../project/06-打开网站窗口.html">
+            
+                <a href="../project/06-打开网站窗口.html">
+            
+                    
+                    06-打开网站窗口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.7" data-path="../project/07-删除信息.html">
+            
+                <a href="../project/07-删除信息.html">
+            
+                    
+                    07-删除信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.8" data-path="../project/08-搜索信息.html">
+            
+                <a href="../project/08-搜索信息.html">
+            
+                    
+                    08-搜索信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.9" data-path="../project/09-定制菜单.html">
+            
+                <a href="../project/09-定制菜单.html">
+            
+                    
+                    09-定制菜单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3.10" data-path="../project/10-项目打包部署.html">
+            
+                <a href="../project/10-项目打包部署.html">
+            
+                    
+                    10-项目打包部署
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="../thanks/">
+            
+                <a href="../thanks/">
+            
+                    
+                    感谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本书使用 GitBook 发布
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >07-特性和技巧</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;"><b></b>&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;</a></li><ul><ul><li><span class="title-icon "></span><a href="#1&#x3001;offscreen-&#x6E32;&#x67D3;"><b></b>1&#x3001;Offscreen &#x6E32;&#x67D3;</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B;-network-detection"><b></b>2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B; (Network Detection)</a></li><li><span class="title-icon "></span><a href="#3&#x3001;&#x63D0;&#x9192;&#xFF08;notivications&#xFF09;"><b></b>3&#x3001;&#x63D0;&#x9192;&#xFF08;Notivications&#xFF09;</a></li><li><span class="title-icon "></span><a href="#4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;preload-scripts&#xFF09;"><b></b>4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;Preload Scripts&#xFF09;</a></li><li><span class="title-icon "></span><a href="#5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;progress-bar&#xFF09;"><b></b>5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;Progress Bar&#xFF09;</a></li></ul></ul></ul></div><a href="#&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;"><a name="&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;" class="anchor-navigation-ex-anchor" href="#&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;" class="plugin-anchor" href="#&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x7279;&#x6027;&#x548C;&#x6280;&#x5DE7;</h1>
+<p>&#x672C;&#x8282;&#x6211;&#x4EEC;&#x6765;&#x5B66;&#x4E60;&#x4E00;&#x4E0B; <code>Electron</code> &#x5176;&#x4ED6;&#x7279;&#x6027;&#x548C;&#x4F7F;&#x7528;&#x6280;&#x5DE7;&#x3002;</p>
+<h3 id="1&#x3001;offscreen-&#x6E32;&#x67D3;"><a name="1&#x3001;offscreen-&#x6E32;&#x67D3;" class="anchor-navigation-ex-anchor" href="#1&#x3001;offscreen-&#x6E32;&#x67D3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;offscreen-&#x6E32;&#x67D3;" class="plugin-anchor" href="#1&#x3001;offscreen-&#x6E32;&#x67D3;"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;Offscreen &#x6E32;&#x67D3;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// Modules</span>
+<span class="hljs-keyword">const</span> {app, BrowserWindow} = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>)
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>)
+
+<span class="hljs-comment">// Keep a global reference of the window object, if you don&apos;t, the window will</span>
+<span class="hljs-comment">// be closed automatically when the JavaScript object is garbage collected.</span>
+<span class="hljs-keyword">let</span> mainWindow
+
+app.disableHardwareAcceleration()
+
+<span class="hljs-comment">// Create a new BrowserWindow when `app` is ready</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createWindow</span> (<span class="hljs-params"></span>) </span>{
+
+  mainWindow = <span class="hljs-keyword">new</span> BrowserWindow({
+    width: <span class="hljs-number">1000</span>, height: <span class="hljs-number">800</span>,
+    show: <span class="hljs-literal">false</span>,
+    webPreferences: {
+      nodeIntegration: <span class="hljs-literal">true</span>,
+      offscreen: <span class="hljs-literal">true</span>
+    }
+  })
+
+  <span class="hljs-comment">// Load index.html into the new BrowserWindow</span>
+  mainWindow.loadURL(<span class="hljs-string">&apos;https://electronjs.org&apos;</span>)
+
+  <span class="hljs-keyword">let</span> i = <span class="hljs-number">1</span>
+  mainWindow.webContents.on(<span class="hljs-string">&apos;paint&apos;</span>, (e, dirty, image) =&gt; {
+
+    <span class="hljs-keyword">let</span> screenshot = image.toPNG()
+    fs.writeFile( app.getPath(<span class="hljs-string">&apos;desktop&apos;</span>) + <span class="hljs-string">`/screenshot_<span class="hljs-subst">${i}</span>.png`</span>, screenshot, <span class="hljs-built_in">console</span>.log )
+    i++
+  })
+
+  mainWindow.webContents.on(<span class="hljs-string">&apos;did-finish-load&apos;</span>, e =&gt; {
+    <span class="hljs-built_in">console</span>.log( mainWindow.getTitle() )
+
+    mainWindow.close()
+    mainWindow = <span class="hljs-literal">null</span>
+  })
+
+  <span class="hljs-comment">// Open DevTools - Remove for PRODUCTION!</span>
+  <span class="hljs-comment">// mainWindow.webContents.openDevTools();</span>
+
+  <span class="hljs-comment">// Listen for window being closed</span>
+  <span class="hljs-comment">// mainWindow.on(&apos;closed&apos;,  () =&gt; {</span>
+  <span class="hljs-comment">//   mainWindow = null</span>
+  <span class="hljs-comment">// })</span>
+}
+
+<span class="hljs-comment">// Electron `app` is ready</span>
+app.on(<span class="hljs-string">&apos;ready&apos;</span>, createWindow)
+
+<span class="hljs-comment">// Quit when all windows are closed - (Not macOS - Darwin)</span>
+app.on(<span class="hljs-string">&apos;window-all-closed&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">if</span> (process.platform !== <span class="hljs-string">&apos;darwin&apos;</span>) app.quit()
+})
+
+<span class="hljs-comment">// When app icon is clicked and app is running, (macOS) recreate the BrowserWindow</span>
+app.on(<span class="hljs-string">&apos;activate&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">if</span> (mainWindow === <span class="hljs-literal">null</span>) createWindow()
+})
+</code></pre>
+<h3 id="2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B;-network-detection"><a name="2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B;-network-detection" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B;-network-detection"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B;-network-detection" class="plugin-anchor" href="#2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B;-network-detection"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x7F51;&#x7EDC;&#x68C0;&#x6D4B; (Network Detection)</h3>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;Content-Security-Policy&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;script-src &apos;self&apos; &apos;unsafe-inline&apos;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>App is: <span class="hljs-tag">&lt;<span class="hljs-name">u</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;status&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">u</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- All of the Node.js APIs are available in this renderer process. --&gt;</span>
+    We are using Node.js <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.write( process.versions.node)</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>,
+    and Electron <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.write( process.versions.electron )</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>.
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+
+      <span class="hljs-keyword">const</span> setStatus = status =&gt; {
+        <span class="hljs-keyword">const</span> statusNode = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;status&apos;</span>)
+        statusNode.innerText = status ? <span class="hljs-string">&apos;online&apos;</span> : <span class="hljs-string">&apos;offline&apos;</span>
+      }
+
+      setStatus( navigator.onLine )
+
+      <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;online&apos;</span>, e =&gt; {
+        setStatus(<span class="hljs-literal">true</span>)
+      })
+      <span class="hljs-built_in">window</span>.addEventListener(<span class="hljs-string">&apos;offline&apos;</span>, e =&gt; {
+        setStatus(<span class="hljs-literal">false</span>)
+      })
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="3&#x3001;&#x63D0;&#x9192;&#xFF08;notivications&#xFF09;"><a name="3&#x3001;&#x63D0;&#x9192;&#xFF08;notivications&#xFF09;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x63D0;&#x9192;&#xFF08;notivications&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;&#x63D0;&#x9192;&#xFF08;notivications&#xFF09;" class="plugin-anchor" href="#3&#x3001;&#x63D0;&#x9192;&#xFF08;notivications&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x63D0;&#x9192;&#xFF08;Notivications&#xFF09;</h3>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;Content-Security-Policy&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;script-src &apos;self&apos; &apos;unsafe-inline&apos;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- All of the Node.js APIs are available in this renderer process. --&gt;</span>
+    We are using Node.js <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.write( process.versions.node)</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>,
+    and Electron <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.write( process.versions.electron )</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>.
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+
+      <span class="hljs-keyword">const</span> { remote } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>)
+
+      <span class="hljs-keyword">const</span> self = remote.getCurrentWindow()
+
+      setTimeout(() =&gt; {
+
+        <span class="hljs-keyword">let</span> notification = <span class="hljs-keyword">new</span> Notification( <span class="hljs-string">&apos;Electron App&apos;</span>, {
+          body: <span class="hljs-string">&apos;Some notification info!&apos;</span>
+        })
+
+        notification.onclick = e =&gt; {
+          <span class="hljs-keyword">if</span>( ! self.isVisible() ) self.show()
+        }
+
+      }, <span class="hljs-number">2000</span>)
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h3 id="4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;preload-scripts&#xFF09;"><a name="4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;preload-scripts&#xFF09;" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;preload-scripts&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;preload-scripts&#xFF09;" class="plugin-anchor" href="#4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;preload-scripts&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x9884;&#x52A0;&#x8F7D;&#x811A;&#x672C;&#xFF08;Preload Scripts&#xFF09;</h3>
+<h5 id="41-indexhtml"><a name="41-indexhtml" class="anchor-navigation-ex-anchor" href="#41-indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a><a name="41-indexhtml" class="plugin-anchor" href="#41-indexhtml"><i class="fa fa-link" aria-hidden="true"></i></a>4.1 index.html</h5>
+<pre><code class="lang-html"><span class="hljs-meta">&lt;!DOCTYPE html&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">html</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">head</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">charset</span>=<span class="hljs-string">&quot;UTF-8&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">meta</span> <span class="hljs-attr">http-equiv</span>=<span class="hljs-string">&quot;Content-Security-Policy&quot;</span> <span class="hljs-attr">content</span>=<span class="hljs-string">&quot;script-src &apos;self&apos; &apos;unsafe-inline&apos;&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">title</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">title</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">head</span>&gt;</span>
+  <span class="hljs-tag">&lt;<span class="hljs-name">body</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">h1</span>&gt;</span>Hello World!<span class="hljs-tag">&lt;/<span class="hljs-name">h1</span>&gt;</span>
+
+    <span class="hljs-comment">&lt;!-- All of the Node.js APIs are available in this renderer process. --&gt;</span>
+    We are using Node.js <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.write( versions.node)</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>,
+    and Electron <span class="hljs-tag">&lt;<span class="hljs-name">strong</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript"><span class="hljs-built_in">document</span>.write( versions.electron )</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">strong</span>&gt;</span>.
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">textarea</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;content&quot;</span> <span class="hljs-attr">rows</span>=<span class="hljs-string">&quot;8&quot;</span> <span class="hljs-attr">cols</span>=<span class="hljs-string">&quot;80&quot;</span>&gt;</span><span class="hljs-tag">&lt;/<span class="hljs-name">textarea</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">br</span>&gt;</span><span class="hljs-tag">&lt;<span class="hljs-name">button</span> <span class="hljs-attr">id</span>=<span class="hljs-string">&quot;save&quot;</span> <span class="hljs-attr">onclick</span>=<span class="hljs-string">&quot;saveText()&quot;</span>&gt;</span>Save Content<span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+
+    <span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="javascript">
+
+      <span class="hljs-keyword">const</span> saveText = e =&gt; {
+
+        <span class="hljs-keyword">const</span> text = <span class="hljs-built_in">document</span>.getElementById(<span class="hljs-string">&apos;content&apos;</span>).value
+
+        writeToFile( text )
+      }
+
+    </span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+  <span class="hljs-tag">&lt;/<span class="hljs-name">body</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">html</span>&gt;</span>
+</code></pre>
+<h5 id="42-mainjs"><a name="42-mainjs" class="anchor-navigation-ex-anchor" href="#42-mainjs"><i class="fa fa-link" aria-hidden="true"></i></a><a name="42-mainjs" class="plugin-anchor" href="#42-mainjs"><i class="fa fa-link" aria-hidden="true"></i></a>4.2 main.js</h5>
+<pre><code class="lang-js"><span class="hljs-comment">// Modules</span>
+<span class="hljs-keyword">const</span> {app, BrowserWindow} = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>)
+
+<span class="hljs-comment">// Keep a global reference of the window object, if you don&apos;t, the window will</span>
+<span class="hljs-comment">// be closed automatically when the JavaScript object is garbage collected.</span>
+<span class="hljs-keyword">let</span> mainWindow
+
+<span class="hljs-comment">// Create a new BrowserWindow when `app` is ready</span>
+<span class="hljs-function"><span class="hljs-keyword">function</span> <span class="hljs-title">createWindow</span> (<span class="hljs-params"></span>) </span>{
+
+  mainWindow = <span class="hljs-keyword">new</span> BrowserWindow({
+    width: <span class="hljs-number">1000</span>, height: <span class="hljs-number">800</span>,
+    webPreferences: {
+      nodeIntegration: <span class="hljs-literal">false</span>,
+      contextIsolation: <span class="hljs-literal">false</span>,
+      preload: __dirname + <span class="hljs-string">&apos;/preload.js&apos;</span>
+    }
+  })
+
+  <span class="hljs-comment">// Load index.html into the new BrowserWindow</span>
+  mainWindow.loadFile(<span class="hljs-string">&apos;index.html&apos;</span>)
+
+  <span class="hljs-comment">// Open DevTools - Remove for PRODUCTION!</span>
+  mainWindow.webContents.openDevTools();
+
+  <span class="hljs-comment">// Listen for window being closed</span>
+  mainWindow.on(<span class="hljs-string">&apos;closed&apos;</span>,  () =&gt; {
+    mainWindow = <span class="hljs-literal">null</span>
+  })
+}
+
+<span class="hljs-comment">// Electron `app` is ready</span>
+app.on(<span class="hljs-string">&apos;ready&apos;</span>, createWindow)
+
+<span class="hljs-comment">// Quit when all windows are closed - (Not macOS - Darwin)</span>
+app.on(<span class="hljs-string">&apos;window-all-closed&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">if</span> (process.platform !== <span class="hljs-string">&apos;darwin&apos;</span>) app.quit()
+})
+
+<span class="hljs-comment">// When app icon is clicked and app is running, (macOS) recreate the BrowserWindow</span>
+app.on(<span class="hljs-string">&apos;activate&apos;</span>, () =&gt; {
+  <span class="hljs-keyword">if</span> (mainWindow === <span class="hljs-literal">null</span>) createWindow()
+})
+</code></pre>
+<h5 id="43-preloadjs"><a name="43-preloadjs" class="anchor-navigation-ex-anchor" href="#43-preloadjs"><i class="fa fa-link" aria-hidden="true"></i></a><a name="43-preloadjs" class="plugin-anchor" href="#43-preloadjs"><i class="fa fa-link" aria-hidden="true"></i></a>4.3 preload.js</h5>
+<pre><code class="lang-js"><span class="hljs-keyword">const</span> { remote } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>)
+<span class="hljs-keyword">const</span> fs = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;fs&apos;</span>)
+
+<span class="hljs-keyword">const</span> desktopPath = remote.app.getPath(<span class="hljs-string">&apos;desktop&apos;</span>)
+
+<span class="hljs-built_in">window</span>.writeToFile = text =&gt; {
+  fs.writeFile( desktopPath + <span class="hljs-string">&apos;/app.txt&apos;</span>, text, <span class="hljs-built_in">console</span>.log )
+}
+
+
+<span class="hljs-built_in">window</span>.versions = {
+  node: process.versions.node,
+  electron: process.versions.electron
+}
+</code></pre>
+<h3 id="5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;progress-bar&#xFF09;"><a name="5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;progress-bar&#xFF09;" class="anchor-navigation-ex-anchor" href="#5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;progress-bar&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;progress-bar&#xFF09;" class="plugin-anchor" href="#5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;progress-bar&#xFF09;"><i class="fa fa-link" aria-hidden="true"></i></a>5&#x3001;&#x8FDB;&#x5EA6;&#x6761;&#xFF08;Progress Bar&#xFF09;</h3>
+<pre><code class="lang-js"><span class="hljs-comment">// renderer.js</span>
+
+<span class="hljs-keyword">const</span> { remote } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>)
+
+<span class="hljs-keyword">const</span> self = remote.getCurrentWindow()
+
+<span class="hljs-keyword">let</span> progress = <span class="hljs-number">0.01</span>
+
+<span class="hljs-keyword">let</span> progressInterval = setInterval(() =&gt; {
+
+  self.setProgressBar(progress)
+
+  <span class="hljs-keyword">if</span> (progress &lt;= <span class="hljs-number">1</span>) {
+    progress += <span class="hljs-number">0.01</span>
+  } <span class="hljs-keyword">else</span> {
+    self.setProgressBar(<span class="hljs-number">-1</span>)
+    clearInterval(progressInterval)
+  }
+}, <span class="hljs-number">75</span>)
+</code></pre>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="06-Shared API.html" class="navigation navigation-prev " aria-label="Previous page: 06-Shared API">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../project/" class="navigation navigation-next " aria-label="Next page: 项目实战">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"07-特性和技巧","level":"1.2.7","depth":2,"next":{"title":"项目实战","level":"1.3","depth":1,"path":"project/README.md","ref":"./project/README.md","articles":[{"title":"01-环境搭建","level":"1.3.1","depth":2,"path":"project/01-环境搭建.md","ref":"./project/01-环境搭建.md","articles":[]},{"title":"02-构建项目基本结构","level":"1.3.2","depth":2,"path":"project/02-构建项目基本结构.md","ref":"./project/02-构建项目基本结构.md","articles":[]},{"title":"03-添加信息","level":"1.3.3","depth":2,"path":"project/03-添加信息.md","ref":"./project/03-添加信息.md","articles":[]},{"title":"04-获得屏幕快照","level":"1.3.4","depth":2,"path":"project/04-获得屏幕快照.md","ref":"./project/04-获得屏幕快照.md","articles":[]},{"title":"05-显示列表","level":"1.3.5","depth":2,"path":"project/05-显示列表.md","ref":"./project/05-显示列表.md","articles":[]},{"title":"06-打开网站窗口","level":"1.3.6","depth":2,"path":"project/06-打开网站窗口.md","ref":"./project/06-打开网站窗口.md","articles":[]},{"title":"07-删除信息","level":"1.3.7","depth":2,"path":"project/07-删除信息.md","ref":"./project/07-删除信息.md","articles":[]},{"title":"08-搜索信息","level":"1.3.8","depth":2,"path":"project/08-搜索信息.md","ref":"./project/08-搜索信息.md","articles":[]},{"title":"09-定制菜单","level":"1.3.9","depth":2,"path":"project/09-定制菜单.md","ref":"./project/09-定制菜单.md","articles":[]},{"title":"10-项目打包部署","level":"1.3.10","depth":2,"path":"project/10-项目打包部署.md","ref":"./project/10-项目打包部署.md","articles":[]}]},"previous":{"title":"06-Shared API","level":"1.2.6","depth":2,"path":"basics/06-Shared API.md","ref":"./basics/06-Shared API.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/lurongtao/felixbooks-electron"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"lurongtao","repo":"felixbooks-electron","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"url":"images/logo.png","style":"background: #000; max-height: 30px; min-height: 30px"}},"theme":"default","author":"古艺散人","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"千锋大前端小册-Electron","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"Electron 入门与实战"},"file":{"path":"basics/07-特性和技巧.md","mtime":"2020-03-01T06:23:10.991Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-01T08:14:03.448Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-expandable-chapters-small/expandable-chapters-small.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-github-buttons/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-donate/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing-plus/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

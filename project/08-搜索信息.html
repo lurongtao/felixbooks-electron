@@ -4,7 +4,7 @@
     <head>
         <meta charset="UTF-8">
         <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
-        <title>03-添加信息 · 千锋大前端小册-Electron</title>
+        <title>08-搜索信息 · 千锋大前端小册-Electron</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="description" content="">
         <meta name="generator" content="GitBook 3.2.3">
@@ -69,10 +69,10 @@
     <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
 
     
-    <link rel="next" href="04-获得屏幕快照.html" />
+    <link rel="next" href="09-定制菜单.html" />
     
     
-    <link rel="prev" href="02-构建项目基本结构.html" />
+    <link rel="prev" href="07-删除信息.html" />
     
 
     
@@ -292,7 +292,7 @@
             
         </li>
     
-        <li class="chapter active" data-level="1.3.3" data-path="03-添加信息.html">
+        <li class="chapter " data-level="1.3.3" data-path="03-添加信息.html">
             
                 <a href="03-添加信息.html">
             
@@ -357,7 +357,7 @@
             
         </li>
     
-        <li class="chapter " data-level="1.3.8" data-path="08-搜索信息.html">
+        <li class="chapter active" data-level="1.3.8" data-path="08-搜索信息.html">
             
                 <a href="08-搜索信息.html">
             
@@ -444,7 +444,7 @@
     <!-- Title -->
     <h1>
         <i class="fa fa-circle-o-notch fa-spin"></i>
-        <a href=".." >03-添加信息</a>
+        <a href=".." >08-搜索信息</a>
     </h1>
 </div>
 
@@ -459,131 +459,109 @@
     
                                 <section class="normal markdown-section">
                                 
-                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;"><b></b>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;</a></li><ul><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x521B;&#x5EFA;-store"><b></b>1&#x3001;&#x521B;&#x5EFA; Store</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;"><b></b>2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;</a></li><li><span class="title-icon "></span><a href="#3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;"><b></b>3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;</a></li><li><span class="title-icon "></span><a href="#4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B;-mainjs"><b></b>4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B; main.js</a></li></ul></ul></ul></div><a href="#&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;"><a name="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;" class="plugin-anchor" href="#&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4FE1;&#x606F;</h1>
-<h3 id="1&#x3001;&#x521B;&#x5EFA;-store"><a name="1&#x3001;&#x521B;&#x5EFA;-store" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x521B;&#x5EFA;-store"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x521B;&#x5EFA;-store" class="plugin-anchor" href="#1&#x3001;&#x521B;&#x5EFA;-store"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x521B;&#x5EFA; Store</h3>
-<h5 id="11-&#x7F16;&#x8F91;-store"><a name="11-&#x7F16;&#x8F91;-store" class="anchor-navigation-ex-anchor" href="#11-&#x7F16;&#x8F91;-store"><i class="fa fa-link" aria-hidden="true"></i></a><a name="11-&#x7F16;&#x8F91;-store" class="plugin-anchor" href="#11-&#x7F16;&#x8F91;-store"><i class="fa fa-link" aria-hidden="true"></i></a>1.1 &#x7F16;&#x8F91; store</h5>
-<p>&#x7F16;&#x8F91; <code>/vue-renderer/src/store/index.js</code>&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-keyword">import</span> Vue <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vue&apos;</span>
-<span class="hljs-keyword">import</span> Vuex <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;vuex&apos;</span>
-
-Vue.use(Vuex)
-
-<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> <span class="hljs-keyword">new</span> Vuex.Store({
-  state: {
-    isShowModal: <span class="hljs-literal">false</span>
-  },
-
-  mutations: {
-    setModalVisible(state, show) {
-      state.isShowModal = show
-    }
-  },
-
-  actions: {
-    setModalVisible({commit}, show) {
-      commit(<span class="hljs-string">&apos;setModalVisible&apos;</span>, show)
-    }
-  }
-})
-</code></pre>
-<h5 id="12-&#x5F15;&#x5165;-store"><a name="12-&#x5F15;&#x5165;-store" class="anchor-navigation-ex-anchor" href="#12-&#x5F15;&#x5165;-store"><i class="fa fa-link" aria-hidden="true"></i></a><a name="12-&#x5F15;&#x5165;-store" class="plugin-anchor" href="#12-&#x5F15;&#x5165;-store"><i class="fa fa-link" aria-hidden="true"></i></a>1.2 &#x5F15;&#x5165; store</h5>
-<p>&#x7F16;&#x8F91; <code>/vue-renderer/src/main.js</code>&#xFF1A;</p>
+                                <div id="anchor-navigation-ex-navbar"><i class="fa fa-navicon"></i><ul><li><span class="title-icon "></span><a href="#&#x641C;&#x7D22;&#x4FE1;&#x606F;"><b></b>&#x641C;&#x7D22;&#x4FE1;&#x606F;</a></li><ul><ul><li><span class="title-icon "></span><a href="#1&#x3001;&#x5B9A;&#x5236;-store"><b></b>1&#x3001;&#x5B9A;&#x5236; Store</a></li><li><span class="title-icon "></span><a href="#2&#x3001;&#x4FEE;&#x6539;-headervue"><b></b>2&#x3001;&#x4FEE;&#x6539; Header.vue</a></li><li><span class="title-icon "></span><a href="#3&#x3001;&#x4FEE;&#x6539;-mainvue"><b></b>3&#x3001;&#x4FEE;&#x6539; Main.vue</a></li></ul></ul></ul></div><a href="#&#x641C;&#x7D22;&#x4FE1;&#x606F;" id="anchorNavigationExGoTop"><i class="fa fa-arrow-up"></i></a><h1 id="&#x641C;&#x7D22;&#x4FE1;&#x606F;"><a name="&#x641C;&#x7D22;&#x4FE1;&#x606F;" class="anchor-navigation-ex-anchor" href="#&#x641C;&#x7D22;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="&#x641C;&#x7D22;&#x4FE1;&#x606F;" class="plugin-anchor" href="#&#x641C;&#x7D22;&#x4FE1;&#x606F;"><i class="fa fa-link" aria-hidden="true"></i></a>&#x641C;&#x7D22;&#x4FE1;&#x606F;</h1>
+<p>&#x641C;&#x7D22;&#x4FE1;&#x606F;&#x7684;&#x601D;&#x8DEF;&#xFF1A;&#x5728; <code>/src/components/Header.vue</code> &#x7EC4;&#x4EF6;&#x91CC;&#x83B7;&#x53D6;&#x5230;&#x7528;&#x6237;&#x4ECE;&#x641C;&#x7D22;&#x6846;&#x91CC;&#x7684;&#x5173;&#x952E;&#x5B57;(keyword)&#xFF0C;&#x4FDD;&#x5B58;&#x5728; <code>Store</code> &#x91CC;&#xFF0C;&#x518D;&#x505A;&#x4E2A; <code>getter</code> , &#x8FC7;&#x6EE4; <code>items</code> &#x4FE1;&#x606F;&#xFF0C;&#x4FEE;&#x6539; <code>Main.vue</code> &#x7EC4;&#x4EF6;&#x7684;&#x6E32;&#x67D3;&#x4FE1;&#x606F;&#x6E90;&#x3002;</p>
+<h3 id="1&#x3001;&#x5B9A;&#x5236;-store"><a name="1&#x3001;&#x5B9A;&#x5236;-store" class="anchor-navigation-ex-anchor" href="#1&#x3001;&#x5B9A;&#x5236;-store"><i class="fa fa-link" aria-hidden="true"></i></a><a name="1&#x3001;&#x5B9A;&#x5236;-store" class="plugin-anchor" href="#1&#x3001;&#x5B9A;&#x5236;-store"><i class="fa fa-link" aria-hidden="true"></i></a>1&#x3001;&#x5B9A;&#x5236; Store</h3>
+<p>&#x4FEE;&#x6539; <code>src/store/modules/main.js</code>&#xFF1A;</p>
 <pre><code class="lang-js"><span class="hljs-comment">// ...</span>
-<span class="hljs-keyword">import</span> store <span class="hljs-keyword">from</span> <span class="hljs-string">&apos;./store&apos;</span>
-<span class="hljs-comment">// ...</span>
+
+<span class="hljs-keyword">const</span> state = {
+  <span class="hljs-comment">// ...</span>
+  keywords: <span class="hljs-string">&apos;&apos;</span>
+}
+
+<span class="hljs-keyword">const</span> mutations = {
+  <span class="hljs-comment">// ...</span>
+
+  changeKeywords(state, keywords) {
+    state.keywords = keywords
+  }
+}
+
+<span class="hljs-keyword">const</span> actions = {
+  <span class="hljs-comment">// ...</span>
+
+  changeKeywords({commit}, keywords) {
+    commit(<span class="hljs-string">&apos;changeKeywords&apos;</span>, keywords)
+  }
+}
+
+<span class="hljs-keyword">const</span> getters = {
+  filteredItems(state) {
+    <span class="hljs-keyword">if</span> (state.keywords) {
+      <span class="hljs-keyword">return</span> state.items.filter((value, index) =&gt; {
+        <span class="hljs-keyword">return</span> value.title.indexOf(state.keywords) != <span class="hljs-number">-1</span>
+      })
+    }
+
+    <span class="hljs-keyword">return</span> state.items
+  }
+}
+
+<span class="hljs-keyword">export</span> <span class="hljs-keyword">default</span> {
+  <span class="hljs-comment">// ...</span>
+
+  getters
+}
 </code></pre>
-<h3 id="2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;"><a name="2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;" class="plugin-anchor" href="#2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x663E;&#x793A;&#x6DFB;&#x52A0;&#x7A97;&#x53E3;</h3>
-<p>&#x7F16;&#x8F91; <code>/vue-renderer/src/components/Header.vue</code>:</p>
+<h3 id="2&#x3001;&#x4FEE;&#x6539;-headervue"><a name="2&#x3001;&#x4FEE;&#x6539;-headervue" class="anchor-navigation-ex-anchor" href="#2&#x3001;&#x4FEE;&#x6539;-headervue"><i class="fa fa-link" aria-hidden="true"></i></a><a name="2&#x3001;&#x4FEE;&#x6539;-headervue" class="plugin-anchor" href="#2&#x3001;&#x4FEE;&#x6539;-headervue"><i class="fa fa-link" aria-hidden="true"></i></a>2&#x3001;&#x4FEE;&#x6539; Header.vue</h3>
+<p>&#x5904;&#x7406; <code>/src/componnent/Header.vue</code> &#x7684; keywords &#x4FE1;&#x606F;&#x83B7;&#x53D6;&#x4E0E;&#x5B58;&#x50A8;&#xFF1A;</p>
 <pre><code class="lang-vue">&lt;template&gt;
   &lt;header&gt;
-    &lt;button id=&quot;show-modal&quot; @click=&quot;setModalVisible(true)&quot;&gt;+&lt;/button&gt;
     // ...
+    &lt;input type=&quot;text&quot; @keyup.enter=&quot;searchItem&quot; v-model=&quot;keywords&quot; id=&quot;search&quot; placeholder=&quot;&#x641C;&#x7D22;...&quot;&gt;
   &lt;/header&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
 import { mapActions } from &apos;vuex&apos;
 export default {
+  data() {
+    return {
+      keywords: &apos;&apos;
+    }
+  },
+
   methods: {
-    ...mapActions([&apos;setModalVisible&apos;])
+    ...mapActions([&apos;setModalVisible&apos;, &apos;changeKeywords&apos;]),
+
+    searchItem() {
+      this.changeKeywords(this.keywords)
+    }
   },
 }
 &lt;/script&gt;
 </code></pre>
-<h3 id="3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;"><a name="3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;" class="plugin-anchor" href="#3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x5B8C;&#x5584;&#x6DFB;&#x52A0;&#x6A21;&#x6001;&#x7EC4;&#x4EF6;</h3>
-<p>&#x7F16;&#x8F91; <code>/vue-renderer/src/components/Modal.vue</code>&#xFF1A;</p>
+<h3 id="3&#x3001;&#x4FEE;&#x6539;-mainvue"><a name="3&#x3001;&#x4FEE;&#x6539;-mainvue" class="anchor-navigation-ex-anchor" href="#3&#x3001;&#x4FEE;&#x6539;-mainvue"><i class="fa fa-link" aria-hidden="true"></i></a><a name="3&#x3001;&#x4FEE;&#x6539;-mainvue" class="plugin-anchor" href="#3&#x3001;&#x4FEE;&#x6539;-mainvue"><i class="fa fa-link" aria-hidden="true"></i></a>3&#x3001;&#x4FEE;&#x6539; Main.vue</h3>
+<p>&#x4FEE;&#x6539; <code>/src/components/Main.vue</code>&#xFF0C;&#x83B7;&#x53D6;&#x5173;&#x952E;&#x5B57;&#x548C;&#x4FEE;&#x6539;&#x6570;&#x636E;&#x6E32;&#x67D3;&#x6570;&#x636E;&#x6E90;&#x3002;</p>
 <pre><code class="lang-vue">&lt;template&gt;
-  &lt;div id=&quot;modal&quot; v-show=&quot;isShowModal&quot;&gt;
-    &lt;input type=&quot;text&quot; id=&quot;url&quot; :disabled=&quot;status&quot; v-model=&quot;url&quot; placeholder=&quot;&#x8F93;&#x5165; URL ...&quot;&gt;
-    &lt;button id=&quot;add-item&quot; :class=&quot;{disabled: status}&quot; :disabled=&quot;status&quot; @click=&quot;addItem&quot;&gt;{{addButtonText}}&lt;/button&gt;
-    &lt;button id=&quot;close-modal&quot; v-show=&quot;!status&quot; @click=&quot;setModalVisible(false)&quot;&gt;&#x53D6;&#x6D88;&lt;/button&gt;
-  &lt;/div&gt;
+  &lt;main&gt;
+    // ...
+    &lt;div id=&quot;items&quot;&gt;
+      &lt;div 
+        v-for=&quot;(item, index) in filteredItems&quot;
+        // ...
+      &gt;
+        // ...
+      &lt;/div&gt;
+    &lt;/div&gt;
+  &lt;/main&gt;
 &lt;/template&gt;
 
 &lt;script&gt;
-import { mapState, mapActions } from &apos;vuex&apos;
-
+// ...
 export default {
-  data() {
-    return {
-      url: &apos;&apos;,
-      status: false,
-      addButtonText: &apos;&#x6DFB;&#x52A0;&apos;
-    }
-  },
-
-  created() {
-
-    // Listen for new item from main process
-    ipcRenderer.on(&apos;new-item-success&apos;, (e, newItem) =&gt; {
-      console.log(newItem)
-
-      this.status = false
-      this.addButtonText = &apos;&#x6DFB;&#x52A0;&apos;
-      this.url = &apos;&apos;
-
-      this.setModalVisible(false)
-    })
-  },
+  // ...
 
   computed: {
-    ...mapState([&apos;isShowModal&apos;])
+    // ...
+
+    ...mapGetters([&apos;filteredItems&apos;])
   },
 
-  methods: {
-    ...mapActions([&apos;setModalVisible&apos;]),
-
-    addItem() {
-      if (this.url !== &apos;&apos;) {
-
-        // Send new item url to main process
-        ipcRenderer.send(&apos;new-item&apos;, this.url)
-
-        this.status = true
-        this.addButtonText = &apos;&#x6DFB;&#x52A0;&#x4E2D;...&apos;
-      }
-    }
-  }
+  // ...
 }
 &lt;/script&gt;
-</code></pre>
-<h3 id="4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B;-mainjs"><a name="4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B;-mainjs" class="anchor-navigation-ex-anchor" href="#4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B;-mainjs"><i class="fa fa-link" aria-hidden="true"></i></a><a name="4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B;-mainjs" class="plugin-anchor" href="#4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B;-mainjs"><i class="fa fa-link" aria-hidden="true"></i></a>4&#x3001;&#x5B8C;&#x5584;&#x4E3B;&#x8FDB;&#x7A0B; main.js</h3>
-<p>&#x7F16;&#x8F91; <code>/main.js</code> , &#x5728;&#x6587;&#x4EF6;&#x4EE3;&#x7801;&#x4E2D;&#x7684;&#x6700;&#x5916;&#x5C42;&#x6DFB;&#x52A0; <code>ipcMain</code> &#x7684; <code>new-item</code> &#x65F6;&#x95F4;&#x76D1;&#x542C;&#xFF0C;&#x91CD;&#x70B9;&#x662F; <code>ipc</code> &#x901A;&#x4FE1;&#xFF1A;</p>
-<pre><code class="lang-js"><span class="hljs-comment">//...</span>
-
-<span class="hljs-comment">// Modules</span>
-<span class="hljs-keyword">const</span> { ipcMain } = <span class="hljs-built_in">require</span>(<span class="hljs-string">&apos;electron&apos;</span>)
-
-<span class="hljs-comment">// Listen for new item request</span>
-ipcMain.on(<span class="hljs-string">&apos;new-item&apos;</span>, (e, itemUrl) =&gt; {
-
-  <span class="hljs-comment">// Get new item and send back to renderer</span>
-  setTimeout(() =&gt; {
-    e.sender.send(<span class="hljs-string">&apos;new-item-success&apos;</span>, <span class="hljs-string">&apos;New item from main process&apos;</span>)
-  }, <span class="hljs-number">2000</span>)
-})
-
-<span class="hljs-comment">// ...</span>
 </code></pre>
 
                                 
@@ -612,12 +590,12 @@ ipcMain.on(<span class="hljs-string">&apos;new-item&apos;</span>, (e, itemUrl) =
 
             
                 
-                <a href="02-构建项目基本结构.html" class="navigation navigation-prev " aria-label="Previous page: 02-构建项目基本结构">
+                <a href="07-删除信息.html" class="navigation navigation-prev " aria-label="Previous page: 07-删除信息">
                     <i class="fa fa-angle-left"></i>
                 </a>
                 
                 
-                <a href="04-获得屏幕快照.html" class="navigation navigation-next " aria-label="Next page: 04-获得屏幕快照">
+                <a href="09-定制菜单.html" class="navigation navigation-next " aria-label="Next page: 09-定制菜单">
                     <i class="fa fa-angle-right"></i>
                 </a>
                 
@@ -628,7 +606,7 @@ ipcMain.on(<span class="hljs-string">&apos;new-item&apos;</span>, (e, itemUrl) =
     <script>
         var gitbook = gitbook || [];
         gitbook.push(function() {
-            gitbook.page.hasChanged({"page":{"title":"03-添加信息","level":"1.3.3","depth":2,"next":{"title":"04-获得屏幕快照","level":"1.3.4","depth":2,"path":"project/04-获得屏幕快照.md","ref":"./project/04-获得屏幕快照.md","articles":[]},"previous":{"title":"02-构建项目基本结构","level":"1.3.2","depth":2,"path":"project/02-构建项目基本结构.md","ref":"./project/02-构建项目基本结构.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/lurongtao/felixbooks-electron"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"lurongtao","repo":"felixbooks-electron","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"url":"images/logo.png","style":"background: #000; max-height: 30px; min-height: 30px"}},"theme":"default","author":"古艺散人","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"千锋大前端小册-Electron","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"Electron 入门与实战"},"file":{"path":"project/03-添加信息.md","mtime":"2020-02-29T05:50:57.127Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-01T08:14:03.448Z"},"basePath":"..","book":{"language":""}});
+            gitbook.page.hasChanged({"page":{"title":"08-搜索信息","level":"1.3.8","depth":2,"next":{"title":"09-定制菜单","level":"1.3.9","depth":2,"path":"project/09-定制菜单.md","ref":"./project/09-定制菜单.md","articles":[]},"previous":{"title":"07-删除信息","level":"1.3.7","depth":2,"path":"project/07-删除信息.md","ref":"./project/07-删除信息.md","articles":[]},"dir":"ltr"},"config":{"plugins":["-sharing","splitter","expandable-chapters-small","anchors","github","github-buttons","donate","sharing-plus","anchor-navigation-ex","favicon"],"styles":{"website":"./styles/website.css"},"pluginsConfig":{"github":{"url":"https://github.com/lurongtao/felixbooks-electron"},"splitter":{},"search":{},"sharing-plus":{"qq":false,"all":["facebook","google","twitter","instapaper","linkedin","pocket","stumbleupon"],"douban":false,"facebook":true,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":true,"messenger":false,"line":false,"vk":false,"pocket":true,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"donate":{"alipay":"./source/images/donate.png","alipayText":" ","button":"赞赏","title":"","wechat":"","wechatText":"微信打赏"},"fontsettings":{"theme":"white","family":"sans","size":2},"highlight":{},"anchor-navigation-ex":{"associatedWithSummary":true,"float":{"floatIcon":"fa fa-navicon","level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"mode":"float","multipleH1":true,"pageTop":{"level1Icon":"","level2Icon":"","level3Icon":"","showLevelIcon":false},"printLog":false,"showGoTop":true,"showLevel":false},"favicon":{"shortcut":"./source/images/favicon.jpg","bookmark":"./source/images/favicon.jpg","appleTouch":"./source/images/apple-touch-icon.jpg","appleTouchMore":{"120x120":"./source/images/apple-touch-icon.jpg","180x180":"./source/images/apple-touch-icon.jpg"}},"github-buttons":{"buttons":[{"user":"lurongtao","repo":"felixbooks-electron","type":"star","size":"small","count":true}]},"expandable-chapters-small":{},"sharing":{"qq":false,"all":["google","facebook","weibo","twitter","qq","qzone","linkedin","pocket"],"douban":false,"facebook":false,"weibo":false,"instapaper":false,"whatsapp":false,"hatenaBookmark":false,"twitter":false,"messenger":false,"line":false,"vk":false,"pocket":false,"google":false,"viber":false,"stumbleupon":false,"qzone":false,"linkedin":false},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false},"anchors":{},"insert-logo":{"url":"images/logo.png","style":"background: #000; max-height: 30px; min-height: 30px"}},"theme":"default","author":"古艺散人","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"千锋大前端小册-Electron","language":"zh-hans","links":{},"gitbook":"3.2.3","description":"Electron 入门与实战"},"file":{"path":"project/08-搜索信息.md","mtime":"2020-02-29T07:54:16.300Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2020-03-01T08:14:03.448Z"},"basePath":"..","book":{"language":""}});
         });
     </script>
 </div>
