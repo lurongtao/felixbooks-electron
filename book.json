@@ -81,7 +81,7 @@
       }
     },
     "insert-logo": {
-      "url": "images/logo.png",
+      "url": "/images/logo.png",
       "style": "background: skyblue; width: 100%; height: 100%;"
     }
   }
